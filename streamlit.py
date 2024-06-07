@@ -19,7 +19,7 @@ print(service_account_info)
 # # Set the environment variable to point to the service account file
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = 'secrets.toml'
 
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = service_account_info['private_key']
+# os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = service_account_info['private_key']
 
 tokenizer = AutoTokenizer.from_pretrained("saved_tokenizer")
 
