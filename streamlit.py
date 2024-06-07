@@ -14,9 +14,6 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
 service_account_info = st.secrets["gcp_service_account"]
 print(service_account_info)
-
-convert_toml_to_json(toml_file_path, json_file_path)
-
 # # Set the environment variable to point to the service account file
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = 'compassion-ly-app-0267ce352c33.json'
 
