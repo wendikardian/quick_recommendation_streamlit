@@ -11,7 +11,7 @@ import numpy as np
 os.environ['KMP_DUPLICATE_LIB_OK'] = 'TRUE'
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
-service_account_info = st.secrets["private_key "]
+service_account_info = st.secrets["private_key"]
 
 
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = service_account_info
