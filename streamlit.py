@@ -14,7 +14,7 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 service_account_info = st.secrets["gcp_service_account"]
 print(service_account_info)
 
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = service_account_info
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = service_account_info['private_key']
 
 tokenizer = AutoTokenizer.from_pretrained("saved_tokenizer")
 
