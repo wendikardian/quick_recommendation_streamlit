@@ -13,6 +13,11 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
 service_account_info = st.secrets["gcp_service_account"]
 print(service_account_info)
+with open("service_account.json", "w") as f:
+    json.dump(service_account_info, f)
+
+# # Set the environment variable to point to the service account file
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = 'service_account.json'
 
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = service_account_info['private_key']
 
