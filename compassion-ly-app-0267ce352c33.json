@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "compassion-ly-app",
+  "private_key_id": "0267ce352c33c19144421f8223fa0bf98a6b0c54",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCjYqH4LyAiTt+0\nnrpgMAPSFRSFqrW9dBJ+m18QdUskLCQr+skRUaAARdyihwhgrbjv6kij3ZQmbPYP\njlPPd54f4cTGpubwb02qJreQIe1Q32Bxx1Rs6Prvv2+9MCnT4wOIiQFP7VBr4f0T\nUSKzpFlrfjxy6Do8h71H/XNrI+adJKQ1kvH5QZ8mgPgWgPhJXemSAXAm8qfz6xip\nPx3szuvri9HrTvac3LMHnyGY11ZNwemLdGHI7XYxNoTd/X9DKAUs/Y6PfW1BTFzF\nOmR+gGIy1DtP+XVVovQZixDtoq+vqkPC545tPShyAm7PJELd8BqRmjB9k7UK16aj\nCW2TRNORAgMBAAECggEAI9g9xJ9CI4S+W3f/V57xF6P8Tp73JEtUy2X24zt4csUk\nYmmwtxX7TlQFZbrOQbebPTdfHGQ+XnfFPABzrq6FiGUVsKdpPxKMLWo1F2/6CqYX\nGJ8sjIBInVSYhR8N7ih92/SCzzA3VpPL2/MO8+54l7aoOGVucV0uT57xNW445/yJ\nnWEvTrm7dc0iOzwH98sSJYBzN8C8J3iR2c1us6CYGTFNMExtfrWLs9GSaJGgxW2S\nlrTQxz2qFLcmkCxG247rj1PMX2nRruLOL7pM8AY+dWQh+InDLUICqEb9X6eEJxoO\nKZ78o/YDE6dN1rtwAkriaAooYdWVSVML5Nm4WKWPaQKBgQDlbKU+vt2WepOD1NRn\nSWrIRdwsp+Bsj8CRKipWpg2GA/9uRGXkOS5HVZCyHSbjO7Ju/XM/qSebCANmhI72\nudtL6z+RjFvUJkdwAq1fDX5H/DaVmFriqmzrrlmT9U4rflx3gONr8rjXgJjxXLEE\neJPabGSPJosBbuN2ZRI0Z4/c5wKBgQC2T6mQ5tTOq9iDz8DOm7BvBhcT/TPZddDX\nAb8y3u3qV3su0F4ExCFTom/A4pDW8Av9GImryozkaaraIfjcFInhtI9hVusGKpJ0\nkR2V+fqLY2cRkWELQvWmzoQJy8QoM3jvRKqbSUrSv01U4v2TQmAenrNciqtG1xiY\ngoWSFQ+ExwKBgQCOIoM1nlX11jbx47c7zjZDoVRIrjDR0TWCOddFG1chgfSLwgBG\nJk7Pjuk4D+t5uBBRxt/RvuB0ocBJkTJpFLgSDsqxR33Ur2pusJnsW5Wyz0SZ5WvZ\nJbCZSsjga4dkVsK+nrFGvXdau6cFUWGx3WnsVl7uePiBiMuPHArtQIPWXQKBgHdC\nP2MZjQYxJe573d2JvO2zpy8dSGitiFLNwrxNVocgeOVTyt0FS+PA86fSzfq8hqsm\n/RAS7P2SHgCZjoixKs0p500+pXmgKbP1Jcxw/TNncAnu9vN99uIKYBdkY0oE+cxT\nN+NjG34nRDgOUOCe3+/H0v7re0VY+a7yWtwHyOILAoGANT3UoWcbTlDIsITLNZ34\np33oRJZSlLVCrjNzmwUlYBwnI9Vnt1Zw8+We4L1Wt9/btA3pc7KoYU00PMN8KMqF\nrz0GtKnYYrgTqg3UFhzkXydIOIAp7uObfx1A1WzNUbUwLPIHvhYRFVJKp++GPo9M\nMnupZQgHGo94P/Zs0Td4uzI=\n-----END PRIVATE KEY-----\n",
+  "client_email": "vertex-ai-endpoint-invoker@compassion-ly-app.iam.gserviceaccount.com",
+  "client_id": "115805215945977340459",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/vertex-ai-endpoint-invoker%40compassion-ly-app.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
