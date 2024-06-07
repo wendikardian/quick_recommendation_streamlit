@@ -11,6 +11,13 @@ import numpy as np
 os.environ['KMP_DUPLICATE_LIB_OK'] = 'TRUE'
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
+service_account_info = st.secrets["gcp_service_account"]
+
+with open("service_account.json", "w") as f:
+    json.dump(service_account_info, f)
+
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "service_account.json"
+
 tokenizer = AutoTokenizer.from_pretrained("saved_tokenizer")
 
 def tokenize_texts(texts, tokenizer, max_len=128):
