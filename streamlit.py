@@ -17,7 +17,7 @@ print(service_account_info)
 #     json.dump(service_account_info, f)
 
 # # Set the environment variable to point to the service account file
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = 'secrets.toml'
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = '.streamlit/secrets.toml'
 
 # os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = service_account_info['private_key']
 
