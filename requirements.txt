@@ -1,5 +1,5 @@
-transformers==4.26.1
+transformers
 google-cloud-aiplatform
-protobuf==3.20.1
+protobuf
 numpy
 tensorflow
