@@ -78,23 +78,27 @@ def get_embeddings(texts, tokenizer, max_len= 128):
 
     return result[0]
 
+
 st.title("Major Recommendation System")
 input_text = st.text_area("Enter a description of your interests and career aspirations:")
 
 if st.button("Get Recommendations"):
-    input_embedding = get_embeddings([input_text], tokenizer)
-    embedding_array = np.array(input_embedding)
+    if len(input_text) < 70:
+        st.error("Please enter at least 70 characters.")
+    else:
+        input_embedding = get_embeddings([input_text], tokenizer)
+        embedding_array = np.array(input_embedding)
 
-    top_5_unique = np.argsort(embedding_array)[-5:][::-1]
+        top_5_unique = np.argsort(embedding_array)[-5:][::-1]
 
-    columns_to_consider = ['Matematika', 'Sains', 'Fisika', 'Sosiologi', 'Biologi', 'Kimia',
-                           'Teknologi', 'Bisnis dan Ekonomi', 'Seni', 'Sastra dan Linguistik',
-                           'Pendidikan', 'Hukum', 'Lingkungan', 'Kesehatan', 'Geografi',
-                           'Komunikasi', 'Sejarah dan Filsafat']
+        columns_to_consider = ['Matematika', 'Sains', 'Fisika', 'Sosiologi', 'Biologi', 'Kimia',
+                               'Teknologi', 'Bisnis dan Ekonomi', 'Seni', 'Sastra dan Linguistik',
+                               'Pendidikan', 'Hukum', 'Lingkungan', 'Kesehatan', 'Geografi',
+                               'Komunikasi', 'Sejarah dan Filsafat']
 
-    num_to_major = {i+1: columns_to_consider[i] for i in range(len(columns_to_consider))}
+        num_to_major = {i+1: columns_to_consider[i] for i in range(len(columns_to_consider))}
 
-    top_5_majors_names = [num_to_major[num+1] for num in top_5_unique]
-    st.write("Top 5 recommended majors for you:")
-    for i, major in enumerate(top_5_majors_names, 1):
-        st.write(f"{i}. {major}")
+        top_5_majors_names = [num_to_major[num+1] for num in top_5_unique]
+        st.write("Top 5 recommended majors for you:")
+        for i, major in enumerate(top_5_majors_names, 1):
+            st.write(f"{i}. {major}")
