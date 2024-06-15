@@ -21,7 +21,7 @@ os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = 'compassion-ly-app-0267ce352c33.j
 
 tokenizer = AutoTokenizer.from_pretrained("saved_tokenizer")
 
-def tokenize_texts(texts, tokenizer, max_len=128):
+def tokenize_texts(texts, tokenizer, max_len=256):
     return tokenizer(
         texts,
         max_length=max_len,
@@ -59,7 +59,7 @@ def predict_custom_trained_model_sample(
     predictions = response.predictions
     return predictions
 
-def get_embeddings(texts, tokenizer, max_len= 128):
+def get_embeddings(texts, tokenizer, max_len= 256):
     tokens = tokenize_texts(texts, tokenizer, max_len)
     tokens = {key: value.numpy().tolist() for key, value in tokens.items()}
     instances = [{"input_ids": input_id, "attention_mask": attention_mask}
